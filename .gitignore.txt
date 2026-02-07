@@ -1,0 +1,72 @@
+﻿# Visual Studio / .NET / C# Ignore Patterns
+.vs/
+.vscode/
+*.sln
+*.csproj.user
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+bin/
+obj/
+Debug/
+Release/
+x64/
+x86/
+*.pidb
+*.unityproj
+*.booproj
+
+# BepInEx / Valheim Mod Specific
+BepInEx/
+BepInEx.cfg
+doorstop_config.ini
+winhttp.dll
+doorstop_libs/
+mono/
+logs/
+BepInEx/LogOutput.log
+*.log
+*.pdb  # Debug symbols, unless needed for releases
+Plugins/  # Ignore compiled plugins; commit source instead
+
+# Generated Mod Files (From Our Code)
+DynamicAutoPinner_Prefabs.yaml
+prefabs.csv
+configs.json  # If added
+
+# Unity / Valheim Assets (If Any)
+Library/
+Temp/
+Logs/
+Packages/manifest.json.lock
+Packages/packages-lock.json
+*.asset  # If custom assets added, ignore unless committed
+
+# OS-Specific Files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+*.swp
+*~
+*.tmp
+
+# General Temp/Backup
+*.bak
+*.cache
+*.temp
+node_modules/  # If any JS tools added
+
+# Ignore User-Specific Configs
+*.cfg  # BepInEx configs, unless template (e.g., commit example.cfg)
+
+# Large Files (Optional: For Future Assets)
+*.zip
+*.rar
+*.7z
+*.exe  # Ignore executables
+
+# Git Itself
+.gitattributes
+.gitignore  # Don't ignore this file itself!
